@@ -1,60 +1,7 @@
-import {
-  Box,
-  Link,
-  Stack,
-  // Paper,
-  // Table,
-  // TableBody,
-  // TableCell,
-  // TableContainer,
-  // TableHead,
-  // TableRow,
-} from "@mui/material";
+import { Box, Link, Stack } from "@mui/material";
 import { DataGrid, type GridRowsProp, type GridColDef } from "@mui/x-data-grid";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
-// const rows: GridRowsProp = [
-//   {
-//     id: "1",
-//     product_name: "Pizza Stone",
-//     brand: "Samsungs",
-//     model: "Galaxy S21",
-//     color: "black",
-//     storage_capacity: "512GB",
-//     price: "245.46",
-//     discount_percentage: "27.24",
-//     release_date: "2/12/2023",
-//     screen_size: "6.7",
-//     processor: "Snapdragon 888",
-//   },
-//   {
-//     id: "2",
-//     product_name: "Pizza Stone",
-//     brand: "Samsungs",
-//     model: "Galaxy S21",
-//     color: "black",
-//     storage_capacity: "512GB",
-//     price: "245.46",
-//     discount_percentage: "27.24",
-//     release_date: "2/12/2023",
-//     screen_size: "6.7",
-//     processor: "Snapdragon 888",
-//   },
-//   {
-//     id: "3",
-//     product_name: "Pizza Stone",
-//     brand: "Samsungs",
-//     model: "Galaxy S21",
-//     color: "black",
-//     storage_capacity: "512GB",
-//     price: "245.46",
-//     discount_percentage: "27.24",
-//     release_date: "2/12/2023",
-//     screen_size: "6.7",
-//     processor: "Snapdragon 888",
-//   },
-// ];
 
 const columns: GridColDef[] = [
   { field: "product_name", headerName: "Product Name", width: 200 },
